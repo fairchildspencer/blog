@@ -1,7 +1,7 @@
 # Template config
 #
-set :site_url, "https://ruby-middleman-tailwind-starter-blog.netlify.app/" # for sitemap.xml.builder
-set :site_title, "Ruby+Middleman+Tailwind Starter Kit"                     # site title for <title> meta tag
+set :site_url, "https://spencerfairchild.com" # for sitemap.xml.builder
+set :site_title, "Spencer Fairchild"                     # site title for <title> meta tag
 set :trailing_slash, false                                                 # turn site.com/home/ -> site.com/home
 
 # Extensions
