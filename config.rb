@@ -28,7 +28,7 @@ end
 #
 # See 'Layouts' (https://middlemanapp.com/basics/layouts/)
 #
-markdown_pages = ["about", "blog"]
+markdown_pages = ["blog"]
 markdown_pages.each do |pge|
   page "/#{pge}.html", :layout => "markdown_layout"
 end
