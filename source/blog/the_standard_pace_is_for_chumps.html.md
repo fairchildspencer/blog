@@ -1,7 +1,7 @@
 ---
 title: The standard pace is for chumps
 description: The pace set by large organizations is meant for the mediocre.
-date: 2024-07-20 14:30
+date: 2024-07-16 14:30
 ---
 
 # "Standard" pace
