@@ -1204,7 +1204,7 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
-#prose-content > p > img + em {
+#prose-content>p>img+em {
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
