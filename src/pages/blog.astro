@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const posts = (await getCollection("posts"))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const formatter = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+});
+---
+
+<BaseLayout title="Blog" description="Spencer Fairchild's personal blog">
+  <article class="prose">
+    <h1>Blog</h1>
+    <p>This is a place for me to document the thoughts that consistently bounce around my head. Check out <a href="/what-is-this-place">this post</a> for more information on why I am doing this.</p>
+    <p><i>Happy reading</i></p>
+    <ul class="article-list">
+      {posts.map((post) => (
+        <li>
+          <time datetime={post.data.date.toISOString()}>[{formatter.format(post.data.date)}]</time>
+          <a href={`/${post.id.replace(/html$/, "")}`}>{post.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  </article>
+</BaseLayout>

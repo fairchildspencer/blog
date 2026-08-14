@@ -1,8 +1,4 @@
-.bundle
-.cache
 .DS_Store
-.sass-cache
-build/
-
-# node deps
-node_modules/*
+node_modules/
+dist/
+.astro/

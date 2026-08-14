@@ -15,7 +15,7 @@ I've been a huge fan of [e-ink displays](https://en.wikipedia.org/wiki/E_Ink) si
 - [7.5inch E-Ink display HAT (Waveshare)](https://www.waveshare.com/7.5inch-e-paper-hat.htm)
 - Soldering iron
 
-![Supplies](images/ep1_supplies.jpeg){:class="max-w-md"} _All of the supplies I used_
+![Supplies](/images/ep1_supplies.jpeg) _All of the supplies I used_
 
 You can get kits for the Raspberry Pi Zero that come with the header pins pre-soldered which would allow you to avoid soldering yourself. Although, I think that soldering is a good skill to have and isn't too difficult. So if you're up to it, give it a shot. I do think getting a kit that comes with the header pins, Pi and an SD card is generally a good idea for a first timer. I got one from [Cana kit](https://www.canakit.com/raspberry-pi-zero-wireless.html) and am very satisfied.
 
@@ -28,7 +28,7 @@ There is a ton of documentation on getting the raspberry pi setup so I won't dig
 
 To get the display connected we need to first [solder the header pins to the pi](https://www.youtube.com/watch?v=UDdbaMk39tM). This was pretty straightforward and took about 15 minutes.
 
-![Headers](images/ep1_solder.jpeg){:class="max-w-md"} _The finished solder job_
+![Headers](/images/ep1_solder.jpeg) _The finished solder job_
 
 Next, we connect the ribbon cable to the display (making sure not to bend it) and slide the HAT onto the pi's pins.
 
@@ -122,7 +122,7 @@ DEBUG:waveshare_epd.epdconfig:close 5V, Module enters 0 power consumption ...
 
 You should see the screen refresh a few times, paint and image, then paint some text. Success! If you get errors, make sure to check that all of the dependencies are installed correctly and the display is connected.
 
-![Demo](images/ep1_demo.jpeg){:class="max-w-md"} _The waveshare demo image_
+![Demo](/images/ep1_demo.jpeg) _The waveshare demo image_
 
 ### Displaying our own UI
 Waveshare is kind enough to provide the driver code that allows us to interface with the display without too much trouble. Basically all we have to do is copy a couple of files from their demo repo into our new project.
@@ -216,7 +216,7 @@ print("Woohoo!")
 
 This should print the text "Hello world" to the screen when you run `python3 main.py`. Nice!
 
-![Text](images/ep1_text.jpeg){:class="max-w-md"} _Our hello world program output_
+![Text](/images/ep1_text.jpeg) _Our hello world program output_
 
 ### Displaying images
 
@@ -286,7 +286,7 @@ display.clear()
 
 That should display an image on the screen for us!
 
-![Stars](images/ep1_stars.jpeg){:class="max-w-md"} _Nice and pixelated view of the night sky_
+![Stars](/images/ep1_stars.jpeg) _Nice and pixelated view of the night sky_
 
 ### Next steps
 Next I am going to start actually building out some sort of dashboard for the display. Things I will experiment with are:

@@ -1,0 +1,41 @@
+:root {
+  background: #fafaf9;
+  color: #44403c;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 48rem; margin: 3rem auto; padding: 1rem; }
+nav { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+a { color: #57534e; text-decoration: underline; }
+a::after { content: " ↗"; }
+a:hover { color: #78716c; }
+.welcome { display: flex; flex-direction: column; gap: 1.5rem; font-size: 1.125rem; line-height: 1.75rem; }
+.welcome h1 { color: #1c1917; font-size: 4.5rem; line-height: 1; font-weight: 700; letter-spacing: -0.05em; margin: 1.5rem 0 1rem; }
+.welcome p { margin: 0; }
+.prose { max-width: 65ch; color: #374151; font-size: 1rem; line-height: 1.75; text-wrap: pretty; }
+.prose > :first-child { margin-top: 0; }
+.prose > :last-child { margin-bottom: 0; }
+.prose h1, .prose h2, .prose h3, .prose h4 { color: #111827; letter-spacing: -0.025em; }
+.prose h1 { font-size: 2.25em; font-weight: 800; line-height: 1.111; margin: 0 0 .889em; }
+.prose h2 { font-size: 1.5em; font-weight: 700; line-height: 1.333; margin: 2em 0 1em; }
+.prose h3 { font-size: 1.25em; font-weight: 600; line-height: 1.6; margin: 1.6em 0 .6em; }
+.prose p { margin: 1.25em 0; }
+.prose a { color: #111827; font-weight: 500; }
+.prose ul, .prose ol { margin: 1.25em 0; padding-left: 1.625em; }
+.prose ul { list-style: disc; }
+.prose ol { list-style: decimal; }
+.prose li { margin: .5em 0; padding-left: .375em; }
+.prose img { max-width: 28rem; height: auto; margin: 2em 0 .5rem; }
+.prose p > img + em { display: block; color: #78716c; font-size: .875rem; line-height: 1.25rem; }
+.prose blockquote { border-left: .25rem solid #e5e7eb; color: #111827; font-style: italic; font-weight: 500; margin: 1.6em 0; padding-left: 1em; }
+.prose p code { background: #f5f5f4; border: 1px solid #e7e5e4; border-radius: .375rem; color: #292524; font-size: .875em; font-weight: 600; padding: .125rem .375rem; }
+.prose pre { background: #fafaf9; border: 1px solid #e7e5e4; border-radius: .375rem; margin: 1.714em 0; overflow-x: auto; padding: .857em 1.143em; }
+.prose pre code { background: none; border: 0; padding: 0; font-weight: 400; }
+.article-list { list-style: none !important; padding: 0 !important; }
+.article-list li { display: grid; gap: 1rem; grid-template-columns: 1fr 4fr; padding: 0; }
+.article-list time { text-align: right; }
+@media (min-width: 640px) { main { padding: 2rem; } }
